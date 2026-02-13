@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マテリアル - 織り生 (Orise)</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#4A4A4A]">
+    <!-- Header -->
+    <header id="header" class="header fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link">
+                <img src="../images/logo.png" alt="織り生 (Orise)" class="h-10 w-auto object-contain">
+            </a>
+            <nav class="nav flex gap-12">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="story.html" class="nav-link">ストーリー</a>
+                <a href="materials.html" class="nav-link">マテリアル</a>
+                <a href="collections.html" class="nav-link">コレクション</a>
+                <a href="craftsmanship.html" class="nav-link">職人の技</a>
+                <a href="product-list.html" class="nav-link">商品一覧</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero relative w-full h-[60vh] flex items-center justify-center mt-20 overflow-hidden">
+        <div class="hero-image-wrapper absolute inset-0 w-full h-full z-10">
+            <img src="../images/材料主图.jpg" alt="マテリアル" class="hero-image w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-black/15 to-black/15 z-20"></div>
+        </div>
+        <div class="hero-content relative z-30 text-center">
+            <h1 class="font-serif text-5xl font-medium text-white tracking-[0.15em] drop-shadow-lg">マテリアル</h1>
+        </div>
+    </section>
+
+    <!-- Materials Grid -->
+    <section class="materials-section py-32">
+        <div class="max-w-7xl mx-auto px-8">
+            <!-- Cotton -->
+            <article class="material-article mb-32 fade-in">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="aspect-[4/5] overflow-hidden border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/棉.jpg" alt="コットン" class="w-full h-full object-cover material-hover">
+                    </div>
+                    <div>
+                        <h2 class="font-serif text-3xl mb-6 tracking-[0.15em]">綿 (Cotton)</h2>
+                        <p class="font-serif text-xl mb-8 text-[#E2D1C3] tracking-[0.15em]">究極の清浄綿、肌を慈しむ</p>
+                        <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                            <p>
+                                私たちが使用するコットンは、厳選された最高級の長繊維綿です。柔らかく、肌に優しく、優れた吸湿性と通気性を備えています。日常の装いから特別な瞬間まで、あらゆるシーンで快適さを提供します。
+                            </p>
+                            <p>
+                                季節を問わず着用できるコットンは、洗濯を重ねるごとに柔らかさが増し、着る人に馴染んでいきます。それは、まさに「肌を慈しむ」素材なのです。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Linen -->
+            <article class="material-article mb-32 fade-in">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="md:order-2 aspect-[4/5] overflow-hidden border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/麻.jpg" alt="リネン" class="w-full h-full object-cover material-hover">
+                    </div>
+                    <div class="md:order-1">
+                        <h2 class="font-serif text-3xl mb-6 tracking-[0.15em]">麻 (Linen)</h2>
+                        <p class="font-serif text-xl mb-8 text-[#E2D1C3] tracking-[0.15em]">風を通す、時の流れを愉しむ</p>
+                        <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                            <p>
+                                リネンは、その独特の質感と清涼感で知られる、夏の装いには欠かせない素材です。優れた吸湿性と速乾性により、暑い季節でも快適に過ごすことができます。
+                            </p>
+                            <p>
+                                時間と共に深まる風合いは、リネンの最大の魅力です。使用を重ねるごとに、より柔らかく、より美しく変化していきます。「時の流れを愉しむ」— それは、リネンがもたらす特別な体験なのです。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Silk -->
+            <article class="material-article mb-32 fade-in">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="aspect-[4/5] overflow-hidden border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/丝.jpg" alt="シルク" class="w-full h-full object-cover material-hover">
+                    </div>
+                    <div>
+                        <h2 class="font-serif text-3xl mb-6 tracking-[0.15em]">絹 (Silk)</h2>
+                        <p class="font-serif text-xl mb-8 text-[#E2D1C3] tracking-[0.15em]">静かなる贅沢、第二の皮膚</p>
+                        <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                            <p>
+                                シルクは、その上質な光沢と滑らかな質感で、特別な瞬間を彩る最高の選択です。天然のタンパク質繊維であるシルクは、肌に優しく、温度調節機能にも優れています。
+                            </p>
+                            <p>
+                                「静かなる贅沢」— 派手さではなく、内側から滲み出る上品さ。シルクは、着る人を包み込み、第二の皮膚のように寄り添います。特別な日の装いとして、長く愛用していただけます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blends -->
+            <article class="material-article fade-in">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="md:order-2 aspect-[4/5] overflow-hidden border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/混纺.jpg" alt="混紡" class="w-full h-full object-cover material-hover">
+                    </div>
+                    <div class="md:order-1">
+                        <h2 class="font-serif text-3xl mb-6 tracking-[0.15em]">混紡 (Blends)</h2>
+                        <p class="font-serif text-xl mb-8 text-[#E2D1C3] tracking-[0.15em]">自然の調和、機能と美の交点</p>
+                        <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                            <p>
+                                異なる素材の特性を活かし、最適な比率で組み合わせた混紡素材は、機能性と美しさを両立させます。コットンとリネンの組み合わせ、シルクとコットンの融合など、それぞれの素材が持つ良さを引き出します。
+                            </p>
+                            <p>
+                                「自然の調和」— 異なる素材が織りなす、新しい可能性。混紡は、機能と美の交点に位置し、より多様なニーズに応えることができます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t-[0.5px] border-[#E5E5E5] py-12 mt-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <p class="text-sm opacity-60 tracking-[0.1em]">© 2026 織り生 (Orise). GAO.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

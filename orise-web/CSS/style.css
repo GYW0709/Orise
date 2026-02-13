@@ -1,0 +1,566 @@
+/* ============================================
+   织り生 (Orise) - Morning Light Design
+   ============================================ */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #FAF9F6;
+    --text-color: #4A4A4A;
+    --accent-color: #E2D1C3;
+    --border-color: rgba(74, 74, 74, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    letter-spacing: 0.1em;
+    line-height: 2.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    line-height: 2.2;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    border-bottom: 0.5px solid transparent;
+    transition: all 0.5s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(250, 249, 246, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 0.5px solid #E5E5E5;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: block;
+    text-decoration: none;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-link {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: var(--text-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.hero-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.hero-slogan {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0.2em;
+    line-height: 2.0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Vertical Writing */
+.writing-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/* Section Container */
+.section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8rem 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 5rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Material Lab Section */
+.material-lab {
+    padding: 0;
+}
+
+.material-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.material-item {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.material-item.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.material-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 0.5px solid var(--border-color);
+}
+
+.material-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.material-image-wrapper:hover .material-image {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.material-content {
+    flex: 1;
+}
+
+.material-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.material-description {
+    font-size: 0.9rem;
+    line-height: 2.0;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Product Detail Section */
+.product-detail {
+    padding: 10rem 0 8rem;
+    min-height: 100vh;
+}
+
+.product-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.product-image-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.product-image-section.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border: 0.5px solid var(--border-color);
+}
+
+.product-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.product-image-wrapper:hover .product-main-image {
+    transform: scale(1.03);
+    opacity: 0.95;
+}
+
+.product-info-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.product-info-section.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.product-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Spec Table */
+.product-spec-table {
+    margin-bottom: 3rem;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-row {
+    border-bottom: 0.5px solid var(--border-color);
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    padding: 1.5rem 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    width: 40%;
+}
+
+.spec-value {
+    padding: 1.5rem 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    text-align: right;
+}
+
+/* Price */
+.product-price {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid var(--border-color);
+}
+
+.price-amount {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 0.05em;
+}
+
+.price-tax {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.6;
+    margin-left: 0.5rem;
+}
+
+/* Product Description */
+.product-description {
+    margin-bottom: 3rem;
+}
+
+.product-description p {
+    font-size: 0.9rem;
+    line-height: 2.0;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Button */
+.product-actions {
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 0.5px solid var(--text-color);
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    border-top: 0.5px solid var(--border-color);
+    padding: 3rem 0;
+    margin-top: 8rem;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.0s ease, transform 1.0s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation delay */
+.fade-in:nth-child(1) { transition-delay: 0s; }
+.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.fade-in:nth-child(3) { transition-delay: 0.2s; }
+.fade-in:nth-child(4) { transition-delay: 0.3s; }
+.fade-in:nth-child(5) { transition-delay: 0.4s; }
+.fade-in:nth-child(6) { transition-delay: 0.5s; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .material-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .hero-slogan {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1.5rem 2rem;
+    }
+
+    .nav {
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .section-container {
+        padding: 6rem 2rem;
+    }
+
+    .product-detail {
+        padding: 8rem 0 6rem;
+    }
+
+    .product-container {
+        padding: 0 2rem;
+    }
+
+    .hero-slogan {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Filter Buttons */
+.filter-btn {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 0.5px solid #E5E5E5;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.1em;
+}
+
+.filter-btn:hover {
+    border-color: var(--text-color);
+    opacity: 0.8;
+}
+
+.filter-btn.active {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+}
+
+/* Material Hover Effect */
+.material-hover {
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.material-hover:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Product Card */
+.product-card {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Size Button */
+.size-btn {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.size-btn.active {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}

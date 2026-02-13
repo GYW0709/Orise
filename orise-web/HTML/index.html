@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>織り生 (Orise) - 時を織り 生を纏う </title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#4A4A4A]">
+    <!-- Header -->
+    <header id="header" class="header fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link">
+                <img src="../images/logo.png" alt="織り生 (Orise)" class="h-10 w-auto object-contain">
+            </a>
+            <nav class="nav flex gap-12">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="story.html" class="nav-link">ストーリー</a>
+                <a href="materials.html" class="nav-link">マテリアル</a>
+                <a href="collections.html" class="nav-link">コレクション</a>
+                <a href="craftsmanship.html" class="nav-link">職人の技</a>
+                <a href="product-list.html" class="nav-link">商品一覧</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero relative w-full h-screen flex items-center justify-center mt-20 overflow-hidden">
+        <div class="hero-image-wrapper absolute inset-0 w-full h-full z-10">
+            <img src="../images/1主图.jpg" alt="织り生" class="hero-image w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-black/15 to-black/15 z-20"></div>
+        </div>
+        <div class="hero-content relative z-30 text-center">
+            <p class="hero-slogan writing-vertical font-serif text-4xl font-medium text-white tracking-[0.2em] leading-[2.2] drop-shadow-lg">
+                時を織り 生を纏う 
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section py-32 fade-in">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <h2 class="section-title font-serif text-3xl mb-6 tracking-[0.15em]">私に戻る、呼吸する布</h2>
+            <p class="text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                織り生は、時間をかけて織り上げられた一枚の布が、あなたの日常に静かな豊かさをもたらすことを信じています。<br>
+                最高級の天然素材と職人の技術が融合し、第二の皮膚のように寄り添う装いをお届けします。
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links py-20 fade-in">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <a href="story.html" class="quick-link-item group">
+                    <div class="aspect-[4/5] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/故事主图.jpg" alt="ストーリー" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 tracking-[0.15em]">ストーリー</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">品牌の哲学と原点</p>
+                </a>
+
+                <a href="materials.html" class="quick-link-item group">
+                    <div class="aspect-[4/5] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/材料主图.jpg" alt="マテリアル" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 tracking-[0.15em]">マテリアル</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">天然繊維の百科事典</p>
+                </a>
+
+                <a href="collections.html" class="quick-link-item group">
+                    <div class="aspect-[4/5] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/收藏主图.jpg" alt="コレクション" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-3 tracking-[0.15em]">コレクション</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">カテゴリーハブ</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t-[0.5px] border-[#E5E5E5] py-12 mt-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <p class="text-sm opacity-60 tracking-[0.1em]">© 2026 織り生 (Orise). GAO.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

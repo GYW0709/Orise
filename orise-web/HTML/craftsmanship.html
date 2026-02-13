@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職人の技 - 織り生 (Orise)</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#4A4A4A]">
+    <!-- Header -->
+    <header id="header" class="header fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link">
+                <img src="../images/logo.png" alt="織り生 (Orise)" class="h-10 w-auto object-contain">
+            </a>
+            <nav class="nav flex gap-12">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="story.html" class="nav-link">ストーリー</a>
+                <a href="materials.html" class="nav-link">マテリアル</a>
+                <a href="collections.html" class="nav-link">コレクション</a>
+                <a href="craftsmanship.html" class="nav-link">職人の技</a>
+                <a href="product-list.html" class="nav-link">商品一覧</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero relative w-full h-[60vh] flex items-center justify-center mt-20 overflow-hidden">
+        <div class="hero-image-wrapper absolute inset-0 w-full h-full z-10">
+            <img src="../images/职人主图.jpg" alt="職人の技" class="hero-image w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-black/15 to-black/15 z-20"></div>
+        </div>
+        <div class="hero-content relative z-30 text-center">
+            <h1 class="font-serif text-5xl font-medium text-white tracking-[0.15em] drop-shadow-lg">職人の技</h1>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Content -->
+    <section class="craftsmanship-content py-32">
+        <div class="max-w-4xl mx-auto px-8 space-y-32">
+            <!-- The Artisan's Gaze -->
+            <article class="fade-in">
+                <h2 class="font-serif text-3xl mb-12 tracking-[0.15em]">職人の眼差し</h2>
+                <div class="aspect-[16/9] overflow-hidden mb-12 border-[0.5px] border-[#E5E5E5]">
+                    <img src="../images/职人1.jpg" alt="職人の眼差し" class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <p>
+                        何十年もの経験を積んだ職人たちは、素材を見ただけで、その特性を理解します。彼らの目は、機械では捉えられない、わずかな違いを見分けます。一糸一糸を丁寧に扱い、最適な織り方を選択する—それが職人の眼差しです。
+                    </p>
+                    <p>
+                        私たちのパートナーである職人たちは、伝統的な技術を守りながら、現代のニーズにも応えています。彼らの技術は、世代を超えて受け継がれ、每一枚の布に込められています。
+                    </p>
+                </div>
+            </article>
+
+            <!-- Slow Looms -->
+            <article class="fade-in">
+                <h2 class="font-serif text-3xl mb-12 tracking-[0.15em]">低速織機</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="aspect-[4/3] overflow-hidden border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/低速机.jpg" alt="低速織機" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                        <p>
+                            大量生産の時代に、私たちは敢えて「遅い」を選びます。低速織機は、時間をかけて丁寧に織り上げることで、素材本来の美しさを引き出します。
+                        </p>
+                        <p>
+                            急がず、焦らず、一糸一糸を大切に扱う姿勢が、织り生のすべての製品に反映されています。この「遅さ」こそが、本物の価値を生み出すのです。
+                        </p>
+                        <p>
+                            低速で織り上げられた布は、密度が高く、強度があり、長く愛用していただけます。それは、時間をかけることの価値を、製品を通じてお伝えする方法なのです。
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Process -->
+            <article class="fade-in">
+                <h2 class="font-serif text-3xl mb-12 tracking-[0.15em]">制作プロセス</h2>
+                <div class="space-y-16">
+                    <div class="process-step">
+                        <div class="flex items-start gap-8">
+                            <span class="font-serif text-2xl text-[#E2D1C3]">01</span>
+                            <div>
+                                <h3 class="font-serif text-xl mb-4 tracking-[0.15em]">素材の選定</h3>
+                                <p class="text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                                    厳選された天然素材の中から、最適なものを選びます。職人の目で、品質を確認し、用途に応じて最適な素材を選択します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="flex items-start gap-8">
+                            <span class="font-serif text-2xl text-[#E2D1C3]">02</span>
+                            <div>
+                                <h3 class="font-serif text-xl mb-4 tracking-[0.15em]">設計と計画</h3>
+                                <p class="text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                                    デザインと機能性を両立させるため、詳細な計画を立てます。織り方、密度、仕上がりを、職人と共に検討します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="flex items-start gap-8">
+                            <span class="font-serif text-2xl text-[#E2D1C3]">03</span>
+                            <div>
+                                <h3 class="font-serif text-xl mb-4 tracking-[0.15em]">織り上げ</h3>
+                                <p class="text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                                    低速織機で、時間をかけて丁寧に織り上げます。一糸一糸を大切に扱い、最適な張力と密度を保ちながら進めます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="flex items-start gap-8">
+                            <span class="font-serif text-2xl text-[#E2D1C3]">04</span>
+                            <div>
+                                <h3 class="font-serif text-xl mb-4 tracking-[0.15em]">仕上げと検品</h3>
+                                <p class="text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                                    織り上がった布は、丁寧に仕上げられ、厳格な検品を経て、お客様の元へ届けられます。品質への妥協は一切ありません。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Heritage -->
+            <article class="fade-in">
+                <div class="aspect-[16/9] overflow-hidden mb-12 border-[0.5px] border-[#E5E5E5]">
+                    <img src="../images/职人3.jpg" alt="伝統の継承" class="w-full h-full object-cover">
+                </div>
+                <h2 class="font-serif text-3xl mb-12 tracking-[0.15em]">伝統の継承</h2>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <p>
+                        织り生は、伝統的な技術を守りながら、現代の生活に適応させています。職人の技術は、世代を超えて受け継がれ、新しい時代にも生き続けています。
+                    </p>
+                    <p>
+                        私たちは、若い世代への技術継承にも力を入れています。伝統的な技法を学び、新しい視点を加えることで、技術は進化し続けます。
+                    </p>
+                    <p>
+                        この継承と進化のバランスこそが、织り生の製品が持つ、時代を超えた価値を生み出しているのです。
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t-[0.5px] border-[#E5E5E5] py-12 mt-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <p class="text-sm opacity-60 tracking-[0.1em]">© 2026 織り生 (Orise). GAO.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

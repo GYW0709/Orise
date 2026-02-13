@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品詳細 - 織り生 (Orise)</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#4A4A4A]">
+    <!-- Header -->
+    <header id="header" class="header fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link">
+                <img src="../images/logo.png" alt="織り生 (Orise)" class="h-10 w-auto object-contain">
+            </a>
+            <nav class="nav flex gap-12">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="story.html" class="nav-link">ストーリー</a>
+                <a href="materials.html" class="nav-link">マテリアル</a>
+                <a href="collections.html" class="nav-link">コレクション</a>
+                <a href="craftsmanship.html" class="nav-link">職人の技</a>
+                <a href="product-list.html" class="nav-link">商品一覧</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail py-24 mt-20">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Product Images -->
+                <div class="product-images fade-in">
+                    <div class="aspect-[3/4] overflow-hidden mb-4 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/丝巾3.jpg" alt="商品画像" id="main-image" class="w-full h-full object-cover">
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="aspect-square overflow-hidden border-[0.5px] border-[#E5E5E5] cursor-pointer thumbnail" data-image="../images/B.png">
+                            <img src="../images/丝巾1.jpg" alt="サムネイル1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square overflow-hidden border-[0.5px] border-[#E5E5E5] cursor-pointer thumbnail" data-image="../images/C.png">
+                            <img src="../images/丝巾2.jpg" alt="サムネイル2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square overflow-hidden border-[0.5px] border-[#E5E5E5] cursor-pointer thumbnail" data-image="../images/D.png">
+                            <img src="../images/丝巾.jpg" alt="サムネイル3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="aspect-square overflow-hidden border-[0.5px] border-[#E5E5E5] cursor-pointer thumbnail" data-image="../images/E.png">
+                            <img src="../images/丝巾4.jpg" alt="サムネイル4" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info fade-in">
+                    <h1 class="font-serif text-4xl mb-4 tracking-[0.15em]">プレミアムコレクション</h1>
+                    <p class="text-lg mb-8 opacity-80">上質な素材と職人の技術が生み出す、特別な一枚です。</p>
+
+                    <!-- Price -->
+                    <div class="price-section mb-8 pb-8 border-b-[0.5px] border-[#E5E5E5]">
+                        <p class="font-sans text-3xl tracking-[0.05em]">￥15,600<span class="text-base ml-2 opacity-60">（税込）</span></p>
+                    </div>
+
+                    <!-- Spec Table -->
+                    <div class="spec-section mb-8">
+                        <table class="spec-table w-full">
+                            <tr class="border-b-[0.5px] border-[#E5E5E5]">
+                                <td class="py-4 font-sans font-normal text-sm w-2/5">透け感</td>
+                                <td class="py-4 font-sans font-light text-sm text-right opacity-80">中</td>
+                            </tr>
+                            <tr class="border-b-[0.5px] border-[#E5E5E5]">
+                                <td class="py-4 font-sans font-normal text-sm">伸縮性</td>
+                                <td class="py-4 font-sans font-light text-sm text-right opacity-80">無</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 font-sans font-normal text-sm">厚み</td>
+                                <td class="py-4 font-sans font-light text-sm text-right opacity-80">標準</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-section mb-8">
+                        <label class="block font-serif text-sm mb-4 tracking-[0.15em]">サイズ</label>
+                        <div class="flex gap-4">
+                            <button class="size-btn border-[0.5px] border-[#4A4A4A] px-6 py-3 text-sm tracking-[0.1em] transition-all hover:bg-[#4A4A4A] hover:text-[#FAF9F6]">A</button>
+                            <button class="size-btn border-[0.5px] border-[#4A4A4A] px-6 py-3 text-sm tracking-[0.1em] transition-all hover:bg-[#4A4A4A] hover:text-[#FAF9F6]">B</button>
+                            <button class="size-btn border-[0.5px] border-[#4A4A4A] px-6 py-3 text-sm tracking-[0.1em] transition-all hover:bg-[#4A4A4A] hover:text-[#FAF9F6]">C</button>
+                            <button class="size-btn border-[0.5px] border-[#4A4A4A] px-6 py-3 text-sm tracking-[0.1em] transition-all hover:bg-[#4A4A4A] hover:text-[#FAF9F6]">D</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <div class="action-section mb-12">
+                        <button class="btn-primary w-full py-4 text-sm tracking-[0.1em] uppercase border-[0.5px] border-[#4A4A4A] transition-all hover:bg-[#4A4A4A] hover:text-[#FAF9F6]">
+                            カートに追加
+                        </button>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <h3 class="font-serif text-lg mb-4 tracking-[0.15em]">商品説明</h3>
+                        <div class="space-y-4 text-sm leading-[2.2] tracking-[0.1em] opacity-80">
+                            <p>
+                                この商品は、厳選された素材と伝統的な技法を融合させて作られています。日常の特別な瞬間に、上質な着心地をお楽しみください。
+                            </p>
+                            <p>
+                                洗濯方法やお手入れについても、丁寧にご案内いたします。永く愛用していただけるよう、素材の特性を活かした設計となっています。
+                            </p>
+                            <p>
+                                詳細なお手入れ方法については、<a href="care.html" class="underline hover:opacity-60">お手入れガイド</a>をご覧ください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="related-products mt-32 fade-in">
+                <h2 class="font-serif text-3xl mb-12 text-center tracking-[0.15em]">関連商品</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <a href="product-detail.html" class="related-product group">
+                        <div class="aspect-[3/4] overflow-hidden mb-4 border-[0.5px] border-[#E5E5E5]">
+                            <img src="../images/纯棉衬衫.jpg" alt="関連商品1" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                        </div>
+                        <h3 class="font-serif text-lg mb-2 tracking-[0.15em]">コットンシャツ</h3>
+                        <p class="font-sans text-base tracking-[0.05em]">￥18,600</p>
+                    </a>
+
+                    <a href="product-detail.html" class="related-product group">
+                        <div class="aspect-[3/4] overflow-hidden mb-4 border-[0.5px] border-[#E5E5E5]">
+                            <img src="../images/丝绵混纺裤子.jpg" alt="関連商品2" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                        </div>
+                        <h3 class="font-serif text-lg mb-2 tracking-[0.15em]">シルクコットンブレンド</h3>
+                        <p class="font-sans text-base tracking-[0.05em]">￥28,600</p>
+                    </a>
+
+                    <a href="product-detail.html" class="related-product group">
+                        <div class="aspect-[3/4] overflow-hidden mb-4 border-[0.5px] border-[#E5E5E5]">
+                            <img src="../images/真丝衬衫.jpg" alt="関連商品3" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                        </div>
+                        <h3 class="font-serif text-lg mb-2 tracking-[0.15em]">シルクブラウス</h3>
+                        <p class="font-sans text-base tracking-[0.05em]">￥32,000</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t-[0.5px] border-[#E5E5E5] py-12 mt-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <p class="text-sm opacity-60 tracking-[0.1em]">© 2026 織り生 (Orise). GAO.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script>
+        // Thumbnail image switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const mainImage = document.getElementById('main-image');
+
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    const imageSrc = this.getAttribute('data-image');
+                    mainImage.src = imageSrc;
+                    
+                    // Update active state
+                    thumbnails.forEach(t => t.classList.remove('ring-2', 'ring-[#4A4A4A]'));
+                    this.classList.add('ring-2', 'ring-[#4A4A4A]');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

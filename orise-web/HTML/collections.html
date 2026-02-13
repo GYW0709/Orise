@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コレクション - 織り生 (Orise)</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#4A4A4A]">
+    <!-- Header -->
+    <header id="header" class="header fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link">
+                <img src="../images/logo.png" alt="織り生 (Orise)" class="h-10 w-auto object-contain">
+            </a>
+            <nav class="nav flex gap-12">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="story.html" class="nav-link">ストーリー</a>
+                <a href="materials.html" class="nav-link">マテリアル</a>
+                <a href="collections.html" class="nav-link">コレクション</a>
+                <a href="craftsmanship.html" class="nav-link">職人の技</a>
+                <a href="product-list.html" class="nav-link">商品一覧</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero relative w-full h-[60vh] flex items-center justify-center mt-20 overflow-hidden">
+        <div class="hero-image-wrapper absolute inset-0 w-full h-full z-10">
+            <img src="../images/收藏主图.jpg" alt="コレクション" class="hero-image w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-black/15 to-black/15 z-20"></div>
+        </div>
+        <div class="hero-content relative z-30 text-center">
+            <h1 class="font-serif text-5xl font-medium text-white tracking-[0.15em] drop-shadow-lg">コレクション</h1>
+        </div>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="collections-section py-32">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cotton Collection -->
+                <a href="product-list.html?category=cotton" class="collection-card group fade-in">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/棉.jpg" alt="コットンコレクション" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-2 tracking-[0.15em]">コットン</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">日常に寄り添う柔らかさ</p>
+                </a>
+
+                <!-- Linen Collection -->
+                <a href="product-list.html?category=linen" class="collection-card group fade-in">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/麻.jpg" alt="リネンコレクション" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-2 tracking-[0.15em]">リネン</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">清涼感と風合い</p>
+                </a>
+
+                <!-- Silk Collection -->
+                <a href="product-list.html?category=silk" class="collection-card group fade-in">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/丝2.jpg" alt="シルクコレクション" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-2 tracking-[0.15em]">シルク</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">静かなる贅沢</p>
+                </a>
+
+                <!-- Blends Collection -->
+                <a href="product-list.html?category=blends" class="collection-card group fade-in">
+                    <div class="aspect-[3/4] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                        <img src="../images/混纺.jpg" alt="混紡コレクション" class="w-full h-full object-cover transition-all duration-600 group-hover:scale-105 group-hover:opacity-90">
+                    </div>
+                    <h3 class="font-serif text-xl mb-2 tracking-[0.15em]">混紡</h3>
+                    <p class="text-sm leading-[2.2] opacity-80">機能と美の調和</p>
+                </a>
+            </div>
+
+            <!-- Featured Collection -->
+            <div class="mt-32 fade-in">
+                <h2 class="font-serif text-3xl mb-12 text-center tracking-[0.15em]">特集コレクション</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <article class="featured-item">
+                        <div class="aspect-[4/5] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                            <img src="../images/季节性.jpg" alt="季節の装い" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif text-xl mb-3 tracking-[0.15em]">季節の装い</h3>
+                        <p class="text-sm leading-[2.2] opacity-80">季節に合わせた、最適な素材とデザインをご提案します。</p>
+                    </article>
+
+                    <article class="featured-item">
+                        <div class="aspect-[4/5] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                            <img src="../images/基础.jpg" alt="ベーシックコレクション" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif text-xl mb-3 tracking-[0.15em]">ベーシックコレクション</h3>
+                        <p class="text-sm leading-[2.2] opacity-80">長く愛用できる、シンプルで上質なデザインです。</p>
+                    </article>
+
+                    <article class="featured-item">
+                        <div class="aspect-[4/5] overflow-hidden mb-6 border-[0.5px] border-[#E5E5E5]">
+                            <img src="../images/高级定制.jpg" alt="リミテッドエディション" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-serif text-xl mb-3 tracking-[0.15em]">リミテッドエディション</h3>
+                        <p class="text-sm leading-[2.2] opacity-80">特別な機会のために、限定数の特別なデザインです。</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t-[0.5px] border-[#E5E5E5] py-12 mt-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <p class="text-sm opacity-60 tracking-[0.1em]">© 2026 織り生 (Orise). GAO.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

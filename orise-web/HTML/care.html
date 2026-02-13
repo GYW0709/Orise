@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お手入れガイド - 織り生 (Orise)</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#4A4A4A]">
+    <!-- Header -->
+    <header id="header" class="header fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="index.html" class="logo-link">
+                <img src="../images/logo.png" alt="織り生 (Orise)" class="h-10 w-auto object-contain">
+            </a>
+            <nav class="nav flex gap-12">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="story.html" class="nav-link">ストーリー</a>
+                <a href="materials.html" class="nav-link">マテリアル</a>
+                <a href="collections.html" class="nav-link">コレクション</a>
+                <a href="craftsmanship.html" class="nav-link">職人の技</a>
+                <a href="product-list.html" class="nav-link">商品一覧</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero relative w-full h-[60vh] flex items-center justify-center mt-20 overflow-hidden">
+        <div class="hero-image-wrapper absolute inset-0 w-full h-full z-10">
+            <img src="../images/护理主图.jpg" alt="お手入れガイド" class="hero-image w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-black/15 to-black/15 z-20"></div>
+        </div>
+        <div class="hero-content relative z-30 text-center">
+            <h1 class="font-serif text-5xl font-medium text-white tracking-[0.15em] drop-shadow-lg">お手入れガイド</h1>
+            <p class="mt-6 text-white text-lg opacity-90">永く愛用するために</p>
+        </div>
+    </section>
+
+    <!-- Care Content -->
+    <section class="care-content py-32">
+        <div class="max-w-4xl mx-auto px-8 space-y-24">
+            <!-- Introduction -->
+            <article class="fade-in">
+                <h2 class="font-serif text-3xl mb-8 tracking-[0.15em]">永く愛用するために</h2>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <p>
+                        织り生の製品は、適切なお手入れをすることで、長く美しい状態を保つことができます。天然素材の特性を理解し、丁寧に扱うことで、時間と共に深まる風合いをお楽しみいただけます。
+                    </p>
+                    <p>
+                        このガイドでは、素材別のお手入れ方法をご紹介します。ご不明な点がございましたら、お気軽にお問い合わせください。
+                    </p>
+                </div>
+            </article>
+
+            <!-- Cotton Care -->
+            <article class="fade-in">
+                <h2 class="font-serif text-2xl mb-8 tracking-[0.15em]">コットンのお手入れ</h2>
+                <div class="aspect-[16/9] overflow-hidden mb-8 border-[0.5px] border-[#E5E5E5]">
+                    <img src="../images/洗衣机1.jpg" alt="コットンのお手入れ" class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <p>
+                        <strong>洗濯：</strong>洗濯機での洗濯が可能です。30度以下の冷水で、優しいモードで洗濯してください。他の色物とは分けて洗濯することをお勧めします。
+                    </p>
+                    <p>
+                        <strong>乾燥：</strong>陰干しのすすめ — 直射日光を避け、風通しの良い日陰で乾燥させてください。これにより、色褪せを防ぎ、素材の風合いを保つことができます。
+                    </p>
+                    <p>
+                        <strong>アイロン：</strong>中温でアイロンをかけることができます。裏返してからアイロンをかけると、より美しい仕上がりになります。
+                    </p>
+                </div>
+            </article>
+
+            <!-- Linen Care -->
+            <article class="fade-in">
+                <h2 class="font-serif text-2xl mb-8 tracking-[0.15em]">リネンのお手入れ</h2>
+                <div class="aspect-[16/9] overflow-hidden mb-8 border-[0.5px] border-[#E5E5E5]">
+                    <img src="../images/洗衣机2.jpg" alt="リネンのお手入れ" class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <p>
+                        <strong>洗濯：</strong>手洗いまたは洗濯機の優しいモードで洗濯してください。リネンは縮みやすいため、冷水での洗濯を推奨します。
+                    </p>
+                    <p>
+                        <strong>乾燥：</strong>陰干しのすすめ — リネンは直射日光に弱いため、必ず日陰で乾燥させてください。時間をかけて自然乾燥させることで、美しい風合いが保たれます。
+                    </p>
+                    <p>
+                        <strong>アイロン：</strong>やや高めの温度で、少し湿らせた状態でアイロンをかけると、しわが取りやすくなります。
+                    </p>
+                </div>
+            </article>
+
+            <!-- Silk Care -->
+            <article class="fade-in">
+                <h2 class="font-serif text-2xl mb-8 tracking-[0.15em]">シルクのお手入れ</h2>
+                <div class="aspect-[16/9] overflow-hidden mb-8 border-[0.5px] border-[#E5E5E5]">
+                    <img src="../images/手洗2.jpg" alt="シルクのお手入れ" class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <p>
+                        <strong>洗濯：</strong>シルクはデリケートな素材です。手洗いを推奨します。中性洗剤を使用し、優しく押し洗いしてください。洗濯機を使用する場合は、シルク専用のモードを選択してください。
+                    </p>
+                    <p>
+                        <strong>乾燥：</strong>陰干しのすすめ — シルクは直射日光に弱く、色褪せの原因となります。必ず日陰で乾燥させ、形を整えながら干してください。
+                    </p>
+                    <p>
+                        <strong>保管：</strong>湿気の少ない場所で、平らに保管してください。ハンガーに長期間かけると、型崩れの原因となります。
+                    </p>
+                </div>
+            </article>
+
+            <!-- General Tips -->
+            <article class="fade-in">
+                <h2 class="font-serif text-2xl mb-8 tracking-[0.15em]">一般的な注意事項</h2>
+                <div class="space-y-6 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                    <div class="care-tip border-l-2 border-[#E2D1C3] pl-6">
+                        <p><strong>陰干しのすすめ：</strong>すべての天然素材において、直射日光を避けた陰干しを推奨します。これにより、色褪せを防ぎ、素材の風合いを長く保つことができます。</p>
+                    </div>
+                    <div class="care-tip border-l-2 border-[#E2D1C3] pl-6">
+                        <p><strong>保管方法：</strong>使用後は、風通しの良い場所で十分に乾燥させてから保管してください。防虫剤を使用する場合は、直接触れないように注意してください。</p>
+                    </div>
+                    <div class="care-tip border-l-2 border-[#E2D1C3] pl-6">
+                        <p><strong>汚れの対処：</strong>汚れがついた場合は、すぐに水で軽く洗い流してください。時間が経つと、汚れが落ちにくくなります。</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Longevity -->
+            <article class="fade-in">
+                <div class="bg-[#E2D1C3]/10 p-12 border-[0.5px] border-[#E5E5E5]">
+                    <h2 class="font-serif text-2xl mb-6 tracking-[0.15em]">長く愛用するための心得</h2>
+                    <div class="space-y-4 text-base leading-[2.2] tracking-[0.1em] opacity-80">
+                        <p>
+                            织り生の製品は、時間をかけて作られています。同じように、時間をかけて丁寧に扱うことで、製品はより美しく、より愛着のあるものになります。
+                        </p>
+                        <p>
+                            適切なお手入れを続けることで、製品は長く美しい状態を保ち、着る人と共に成長していきます。それは、まさに「永く愛用する」ということなのです。
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t-[0.5px] border-[#E5E5E5] py-12 mt-32">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <p class="text-sm opacity-60 tracking-[0.1em]">© 2026 織り生 (Orise). GAO.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>
